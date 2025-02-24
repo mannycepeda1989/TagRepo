@@ -53,4 +53,8 @@ resource "azurerm_application_gateway" "network" {
     backend_address_pool_name  = local.backend_address_pool_name
     backend_http_settings_name = local.http_setting_name
   }
+  tags = {
+    manny     = "cepeda"
+    yor_trace = "39294bae-880a-4109-9d78-05de8382c5d9"
+  }
 }
